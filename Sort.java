@@ -8,7 +8,7 @@ class Main
     { 
       // sort the array here
       for (int x = 0; x < (arr.length-1); x++){
-        for (int i = 0; i < (arr.length-1); i++){
+        for (int i = 0; i < (arr.length-1)-x; i++){
           if (arr[i] > arr[i+1]){
             double temp = arr[i];
             arr[i] = arr[i+1];

@@ -16,11 +16,11 @@ class TestSort
       
       String userName = myObj.nextLine();  // Read user input
       
-      System.out.println("This will test your sorting with 1,000,000 items between +/- 1000000");
+      System.out.println("This will test your sorting with " + userName + " items between +/- 1000000");
       
-      double arr[] = new double[1000000];
+      double arr[] = new double[Integer.parseInt(userName)];
 
-      for (int i = 0; i < 1000000; i++) {
+      for (int i = 0; i < Integer.parseInt(userName); i++) {
         arr[i] = new Random().nextDouble() * 2000000 - 1000000;
       }
       // create a sorted version to test.

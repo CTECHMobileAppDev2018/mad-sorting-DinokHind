@@ -7,6 +7,15 @@ class Main
     void sort(double arr[], long start, long end) 
     { 
       // sort the array here
+      for (int x = 0; x < (arr.length-1); x++){
+        for (int i = 0; i < (arr.length-1); i++){
+          if (arr[i] > arr[i+1]){
+            double temp = arr[i];
+            arr[i] = arr[i+1];
+            arr[i+1] = temp;
+          }
+        }
+      }
     } 
 
   

@@ -2,15 +2,16 @@ import java.util.Arrays;
 
 class Main 
 { 
-  int iSmallest;
     // start and end are optional - some sorting algorithms use them, but you can ignore them
     void sort(double arr[], long start, long end) 
     { 
     
     //Selection sort
-      for (int x = 0; x < (arr.length-1); x++){
-        double smallest = arr[x];
-        for (int i = 0; i < arr.length; i++){
+      double smallest;
+      int iSmallest = 0;
+      for (int x = 0; x < (arr.length); x++){
+        smallest = arr[x];
+        for (int i = x+1; i < arr.length; i++){
           if (arr[i] < smallest){
             smallest = arr[i];
             iSmallest = i;
